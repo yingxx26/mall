@@ -1,0 +1,19 @@
+﻿一，redis启动
+1，进入E:\Redis-x64-3.0.504
+2，当前目录 cmd
+  redis-server.exe redis.windows.conf
+
+三，启动微服务
+  MallAdminApplication
+  MallPortalApplication
+
+四，内网穿透
+访问 https://www.fgnwct.com/home.html
+找到 Windows 启动命令:
+npc.exe -server=free.vipnps.vip:8024 -vkey=cdc6def126994509
+进入E:\Program Files (x86)\feigeNet
+点击傻瓜式运行
+
+
+
+

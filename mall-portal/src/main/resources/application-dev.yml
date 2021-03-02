@@ -30,8 +30,8 @@ spring:
     host: localhost
     port: 5672
     virtual-host: /mall
-    username: mall
-    password: mall
+    username: guest
+    password: guest
 
 logging:
   level:

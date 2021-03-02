@@ -60,7 +60,7 @@ public class PmsDaoTests {
     }
 
     @Test
-    public void testredis() {
+    public void testredisHash() {
         //redisTemplate.boundHashOps("testhash");
         //redisTemplate.opsForHash().put("testhash", "1", 1);
         //redisTemplate.opsForHash().put("testhash", "2", 2);
@@ -71,6 +71,19 @@ public class PmsDaoTests {
         Set<Object> testhash4 = redisTemplate.boundHashOps("testhash").keys();
         List<Object> testhash5 = redisTemplate.boundHashOps("testhash").values();
         redisTemplate.boundHashOps("testhash").get("2");
+        LOGGER.info("");
+    }
+
+
+    @Test
+    public void testredisList() {
+
+        redisTemplate.opsForList().leftPush("testlist", 1);
+        redisTemplate.opsForList().leftPush("testlist", 2);
+        redisTemplate.opsForList().leftPush("testlist", 3);
+        redisTemplate.opsForList().leftPush("testlist", 4);
+        //Object rightPop = redisTemplate.opsForList().rightPop("testlist");
+        //Object rightPop1 = redisTemplate.boundListOps("testlist").rightPop();
         LOGGER.info("");
     }
 
