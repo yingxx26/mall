@@ -8,9 +8,9 @@ public class PmsProductFullReduction implements Serializable {
     private Long id;
 
     private Long productId;
-
+//满减基准价格
     private BigDecimal fullPrice;
-
+//要减的价格
     private BigDecimal reducePrice;
 
     private static final long serialVersionUID = 1L;
